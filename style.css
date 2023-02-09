@@ -2,6 +2,35 @@ body {
     margin: 0px;
     margin-top: 20px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+progress {
+    width: 30dvw;
+}
+
+ul {
+    margin: 0;
+}
+
+ul.Dashed {
+    list-style-type: none;
+}
+
+ul.Dashed > li {
+    text-indent: -40px;
+}
+
+ul.Dashed > li:before {
+    content: "- ";
+    text-indent: -40px;
 }
 
 .Head {
@@ -11,26 +40,12 @@ body {
     border-bottom: 1px solid lightgray;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.Head_content {
+.Head_text {
     margin: 15px;
     text-align: center;
     font-family: Arial;
     font-size: 20px;
     flex: 1;
-}
-
-.Head_content_color {
-    margin: 15px;
-    text-align: center;
-    font-family: Arial;
-    font-size: 20px;
-    flex: 1;
-    color: purple;
 }
 
 .Body {
@@ -40,7 +55,7 @@ a {
 }
 
 .Margin {
-    padding-bottom: 250px;
+    padding-bottom: 150px;
     display: flex;
     flex-direction: column;
     border-right: 1px solid lightgray;
@@ -52,26 +67,16 @@ a {
 }
 
 .Main {
-    padding: 50px;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.Main_title {
-    margin: 0px;
-    padding: 10px;
-    padding-bottom: 50px;
-    font-family: Arial Narrow;
-    font-size: 40px;
-    color: darkgray;
 }
 
 .Footer {
     padding: 3px;
     display: flex;
     justify-content: center;
-    text-align: center;
     border-top: 1px solid lightgray;
 }
 
@@ -94,24 +99,6 @@ a {
     color: black;
 }
 
-.Subtitle_two {
-    margin: 0px;
-    padding-left: 10px;
-    text-align: start;
-    font-family: Arial;
-    font-size: 15px;
-    color: black;
-}
-
-.Subtitle_three {
-    margin: 0px;
-    padding-left: 10px;
-    text-align: start;
-    font-family: Arial;
-    font-size: 20px;
-    color: gray;
-}
-
 .Text {
     margin: 0px;
     padding: 10px;
@@ -123,21 +110,11 @@ a {
 
 .Text_two {
     margin: 0px;
-    padding: 10px;
     text-align: start;
     font-family: Arial;
     font-weight: bold;
-    font-size: 20px;
-    color: gray;
-}
-
-.Email {
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
-    font-family: Arial;
     font-size: 15px;
-    color: blue;
+    color: gray;
 }
 
 .Image {
@@ -146,33 +123,19 @@ a {
     border-radius:50%;
 }
 
-.Color {
-    color: purple;
+.Progress_bar {
+    margin: 10px;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    height: 8px;
+    width: 450px;
 }
 
-progress {
-    width: 30dvw;
-}
-
-.Padding {
-    padding: 20px;
-}
-
-ul {
-    margin: 0;
-}
-
-ul.Dashed {
-    list-style-type: none;
-}
-
-ul.Dashed > li {
-    text-indent: -40px;
-}
-
-ul.Dashed > li:before {
-    content: "- ";
-    text-indent: -40px;
+.Progress_bar_content {
+    border-radius: 25px 0px 0px 25px;
+    background-color: blue;
+    height: 8px;
+    width: 450px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -201,16 +164,6 @@ ul.Dashed > li:before {
         border-top: 1px solid lightgray;
     }
 
-    .Main_title {
-        margin: 0px;
-        padding: 10px;
-        padding-bottom: 30px;
-        text-align: center;
-        font-family: Arial Narrow;
-        font-size: 35px;
-        color: darkgray;
-    }
-
     .Heading {
         align-self: center;
     }
@@ -228,5 +181,20 @@ ul.Dashed > li:before {
         width:30vmin; 
         height:30vmin; 
         border-radius:50%;
+    }
+
+    .Progress_bar {
+        margin: 10px;
+        border-radius: 25px;
+        border: 1px solid lightgray;
+        height: 8px;
+        width: 600px;
+    }
+    
+    .Progress_bar_content {
+        border-radius: 25px 0px 0px 25px;
+        background-color: blue;
+        height: 8px;
+        width: 600px;
     }
 }
