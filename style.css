@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.Head {
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid purple;
+    border-bottom: 1px solid lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.Head_content {
+    margin: 15px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    flex: 1;
+}
+
+.Head_content_color {
+    margin: 15px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    flex: 1;
+    color: purple;
+}
+
+.Body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.Margin {
+    padding-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid lightgray;
+}
+
+.Margin_content {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Main {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Main_title {
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 50px;
+    font-family: Arial Narrow;
+    font-size: 40px;
+    color: darkgray;
+}
+
+.Footer {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
+
+.Title {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial Narrow;
+    font-size: 40px;
+    color: darkgray;
+}
+
+.Subtitle {
+    margin: 0px;
+    padding-left: 10px;
+    text-align: start;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.Subtitle_two {
+    margin: 0px;
+    padding-left: 10px;
+    text-align: start;
+    font-family: Arial;
+    font-size: 15px;
+    color: black;
+}
+
+.Subtitle_three {
+    margin: 0px;
+    padding-left: 10px;
+    text-align: start;
+    font-family: Arial;
+    font-size: 20px;
+    color: gray;
+}
+
+.Text {
+    margin: 0px;
+    padding: 10px;
+    text-align: start;
+    font-family: Arial;
+    font-size: 15px;
+    color: black;
+}
+
+.Text_two {
+    margin: 0px;
+    padding: 10px;
+    text-align: start;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+}
+
+.Email {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+    color: blue;
+}
+
+.Image {
+    width:30vmin; 
+    height:30vmin; 
+    border-radius:50%;
+}
+
+.Color {
+    color: purple;
+}
+
+progress {
+    width: 30dvw;
+}
+
+.Padding {
+    padding: 20px;
+}
+
+ul {
+    margin: 0;
+}
+
+ul.Dashed {
+    list-style-type: none;
+}
+
+ul.Dashed > li {
+    text-indent: -40px;
+}
+
+ul.Dashed > li:before {
+    content: "- ";
+    text-indent: -40px;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        margin: 0px;
+        margin-top: 20px;
+        padding: 0px;
+        justify-content: center;
+    }
+    
+    .Body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Margin {
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Main {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid lightgray;
+    }
+
+    .Main_title {
+        margin: 0px;
+        padding: 10px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-family: Arial Narrow;
+        font-size: 35px;
+        color: darkgray;
+    }
+
+    .Heading {
+        align-self: center;
+    }
+
+    .Title {
+        margin: 0px;
+        padding: 10px;
+        text-align: center;
+        font-family: Arial Narrow;
+        font-size: 30px;
+        color: darkgray;
+    }
+
+    .Image {
+        width:30vmin; 
+        height:30vmin; 
+        border-radius:50%;
+    }
+}
